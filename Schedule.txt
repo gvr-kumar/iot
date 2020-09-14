@@ -1,6 +1,6 @@
-1)OOPS concepts (Encapsulation, Polymorphism, Inheritance, Abstraction,)
+1)OOPS concepts (Encapsulation, Polymorphism, Inheritance, Abstraction)
 
-2)Static, Access specifiers
+2)Static, Access specifiers, getters & setters
 
 
 3)Packages & Interfaces 
@@ -13,7 +13,7 @@
 
 7)Garbage collection
 
-8) Java collections: implementation of utilites (collections)
+8) Java collections: implementation of utilities (collections)
 
 9) Enumerations, Autoboxing, and Annotations (Metadata)
 
@@ -70,3 +70,9 @@ Misc:
 8) Serverless Architechture
 
 9) Jenkins configuration and build files
+
+10) Build process- build with maven
+
+11)Integrate with UI and DB
+
+12) UML diagrams 

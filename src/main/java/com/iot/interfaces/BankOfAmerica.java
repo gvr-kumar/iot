@@ -1,7 +1,7 @@
 package com.iot.interfaces;
 
 
-public class BankOfAmerica implements Bank{
+public class BankOfAmerica extends AbstractBank{
 	/*
 	 * implements keyword is used to implement the interface
 	 * 
@@ -12,18 +12,15 @@ public class BankOfAmerica implements Bank{
 	
 
 	public void checkBalance() {
-		// TODO Auto-generated method stub
-		System.out.println("Check Current Balance");
+		System.out.println("Check Current Balance-BOFA");
 	}
 
 	public void withdrawal() {
-		// TODO Auto-generated method stub
-		System.out.println("Withdraw money");
+		System.out.println("Withdraw money-BOFA");
 	}
 
 	public void depositMoney() {
-		// TODO Auto-generated method stub
-		System.out.println("Deposit money");
+		System.out.println("Deposit money-BOFA");
 	}
 
 }

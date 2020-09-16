@@ -3,7 +3,7 @@
 2)Static, Access specifiers, getters & setters
 
 
-3)Packages & Interfaces 
+3)Packages & Interfaces , Dynamic resolution
 
 4)Exception Handling
 

@@ -1,6 +1,6 @@
 package com.iot.interfaces;
 
-public class CitiSavings extends CitiBank{
+public abstract class AbstractBank implements Bank{
 	
 	/*An abstract class extending another abstract class need not implement all the methods of an interface
 	 * 
@@ -10,12 +10,20 @@ public class CitiSavings extends CitiBank{
 	 * 
 	 * If the child class is not declared abstract then it has to define (implement) the missing methods in an interface
 	 * 
+	 * An Abstract class can have its own methods declared and defined.
 	 */
-
-	public void depositMoney() {
-		// TODO Auto-generated method stub
-		
+	
+	
+	public void checkBalance() {
+		System.out.println("Abstract Check Current Balance");
 	}
+	
+	public void creditCheck()
+	{
+		System.out.println("Abstract Credit Check");
+	}
+	
+	
 
 	
 

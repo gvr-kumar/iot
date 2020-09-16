@@ -1,6 +1,6 @@
 package com.iot.interfaces;
 
-public abstract class CitiBank implements Bank{
+public class CitiBank implements Bank{
 	/*
 	 * abstract class is defined using abstract keyword.
 	 * 
@@ -10,13 +10,16 @@ public abstract class CitiBank implements Bank{
 	
 
 	public void checkBalance() {
-		// TODO Auto-generated method stub
-		System.out.println("Check Current Balance");
+		System.out.println("Check Current Balance-Citi");
 	}
 
 	public void withdrawal() {
-		// TODO Auto-generated method stub
-		System.out.println("Withdraw money");
+		System.out.println("Withdraw money-Citi");
+	}
+	
+	public void depositMoney() {
+		System.out.println("Deposit money-Citi");
+		
 	}
 
 }

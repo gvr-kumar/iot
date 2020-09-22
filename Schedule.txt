@@ -5,7 +5,7 @@
 
 3)Packages & Interfaces , Dynamic resolution
 
-4)Exception Handling
+4)Exception Handling, Wrapper class
 
 5)Multithreaded Programming
 

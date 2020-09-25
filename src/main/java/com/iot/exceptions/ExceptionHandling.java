@@ -1,9 +1,15 @@
 package com.iot.exceptions;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /*
+ * 
+ * Every class extends lang package object class.
+ * 
  * base class reference can be assigned with child class object
+ * 
+ * Exceptions are the exceptional cases or the corner cases
  * 
  * Throwable is the super or base class for all exceptions and errors
  * 
@@ -26,16 +32,21 @@ import java.io.IOException;
  * Exception handling: try, catch, throw, throws, finally
  * 
  * try, catch: 
+ * 
+ * if we don't know whether your program throws error or exception then use throwable
+ * 
+ * throws exception type should match with the catch exception type 
+ * 
  */
 
 public class ExceptionHandling {
 	
-	public void throwException(int intParam) throws Exception 
+	public void throwException(int intParam) throws Throwable //throws exception type should match with the catch exception type 
 	{
 		System.out.println("In throwException");
 		if(intParam<=10)
 		{
-			throw new IOException("IOException: Throw exception from ExceptionHandling");
+			throw new IOException("IOException: Throw exception from ExceptionHandling", new ArrayIndexOutOfBoundsException());
 		}
 		else if (intParam>=20)
 		{
@@ -47,6 +58,24 @@ public class ExceptionHandling {
 	public void throwExcep2(int[] intArr) throws Exception
 	{
 		System.out.println("3rd element from intArr: " + intArr[2]);
+	}
+	
+	public int throwExcep3(int[] intArr, int indx) {
+		int retVal = 0;
+		
+		if(indx<0)
+		{
+			throw new NumberFormatException("Negative Array Index");
+		}
+		else if(indx>intArr.length)
+		{
+			throw new ArrayIndexOutOfBoundsException("Array Index out of Bounds");			
+		}
+		else 
+		{
+			retVal = intArr[indx];
+		}
+		return retVal;
 	}
 
 }

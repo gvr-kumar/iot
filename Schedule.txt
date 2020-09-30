@@ -5,7 +5,7 @@
 
 3)Packages & Interfaces , Dynamic resolution
 
-4)Exception Handling, Wrapper class
+4)Exception Handling, Wrapper class, POJO
 
 5)Multithreaded Programming
 

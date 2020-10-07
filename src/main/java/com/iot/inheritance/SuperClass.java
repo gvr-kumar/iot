@@ -14,5 +14,10 @@ public class SuperClass {
 	{
 		return str1;
 	}
+	
+	public int overRiding(int a, int b) 
+	  { 
+		  return a*b; 
+	  }
 
 }

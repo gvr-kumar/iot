@@ -21,5 +21,10 @@ public class CitiBank implements Bank{
 		System.out.println("Deposit money-Citi");
 		
 	}
+	
+	public void miniStatement()
+	{
+		System.out.println("Mini Statement- Citi");
+	}
 
 }

@@ -1,5 +1,6 @@
 package com.iot.noaccess;
-import com.iot.access.*;
+import com.iot.access.ProtectedMembers;
+import com.iot.oops.Human;
 
 public class NoAccessMainClas {
 
@@ -9,6 +10,9 @@ public class NoAccessMainClas {
 		ProtectedMembers prtcMem = new ProtectedMembers();
 		
 		//prtcMem. --> cant access protected members which are in a different package.
+		
+		Human hum = new Human();
+		//hum.Sal
 
 	}
 

@@ -7,8 +7,11 @@ public class Human {
 	 * 
 	 * Abstraction:
 	 * 
+	 * public: members can be accessed any where and everywhere.
 	 * 
 	 * private members (variables & methods) can be accessed only within the same class (cannot be accessed out that class)
+	 * 
+	 * protected members can be accessed only within the same package.
 	 */
 	
 	//Instance variables
@@ -20,6 +23,7 @@ public class Human {
 	private String gender;
 	private String language;
 	private boolean maritalStatus;
+	protected double salary;
 	
 	//Constructors
 	
@@ -32,14 +36,15 @@ public class Human {
 		this.lastName = lastName;
 		this.firstName = firstName;
 		this.age = age;
-		this.country = country;
+		this.country = country;		
 	}	
 
-	public Human(String gender, String language, boolean maritalStatus) {
+	public Human(String gender, String language, boolean maritalStatus, double sal) {
 		super();
 		this.gender = gender;
 		this.language = language;
 		this.maritalStatus = maritalStatus;
+		this.salary = sal;
 	}
 
 	//Getters & setters
@@ -129,6 +134,14 @@ public class Human {
 
 	//Methods
 	
+	protected double getSalary() {
+		return salary;
+	}
+
+	protected void setSalary(double salary) {
+		this.salary = salary;
+	}
+
 	public void speak()
 	{
 		System.out.println(this.firstName + " can speak " + this.language);
@@ -142,13 +155,20 @@ public class Human {
 	{
 		System.out.println(this.firstName + " work in " + this.country);
 	}
+	
 	private boolean maritalStatus()
 	{
 		return this.maritalStatus;
 	}
+	
 	private void details()
 	{
 		maritalStatus();
+	}
+	
+	protected double salary()
+	{
+		return this.salary();
 	}
 
 }

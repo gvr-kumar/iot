@@ -2,12 +2,13 @@
 
 2)Static, Access specifiers, getters & setters
 
-
 3)Packages & Interfaces , Dynamic resolution
 
 4)Exception Handling, Wrapper class, POJO
 
-5)Inheritance (super, this), Multithreaded Programming
+5) Autoboxing, unboxing, has-a & is-a relationship.
+
+Inheritance (super, this), Multithreaded Programming
 
 6) what is JVM? Performance? Heap, stack, differences? out of memory errors.
 

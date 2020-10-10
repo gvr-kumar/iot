@@ -11,3 +11,15 @@ public class OnlyOneObjectClass {
 		
 	}
 }
+
+
+/*
+ * private, 
+ * protected
+ * 
+ * Final static
+ * 
+ * constructors
+ * 
+ */
+

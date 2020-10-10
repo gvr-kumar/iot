@@ -6,17 +6,36 @@ public class InheritanceMainClass {
 	 * 
 	 * Parent class or base class:
 	 * 
+	 * A final class cannot be extended or cannot be a parent class
+	 *
+	 * Final methods cannot be overridden
 	 * 
 	 * 
+	 * 
+	 * An abstract class cannot be final
 	 */
 
 	public static void main(String[] args) {
 		
-		SuperClass supClass = new SuperClass();
-		System.out.println(supClass.overRiding(2,3));
+		/*
+		 * SuperClass supClass = new SuperClass();
+		 * System.out.println(supClass.overRiding(2,3));
+		 * 
+		 * SubClass1 sbCls1 = new SubClass1();
+		 * System.out.println(sbCls1.overRiding(2,3));
+		 * 
+		 * FinalMethodClass finMethClas = new FinalMethodClass();
+		 * 
+		 * finMethClas.method1();
+		 * 
+		 * System.out.println(FinalVariableClass.a);
+		 */// Final static variables can be directly accessed using the class name and no need of object
 		
-		SubClass1 sbCls1 = new SubClass1();
-		System.out.println(sbCls1.overRiding(2,3));
+		SubClass31 subclas31 = new SubClass31();
+		subclas31.getC();
+		subclas31.printC();
+		
+		
 		
 		/*
 		 * System.out.println("Subclass1: " + sbCls1.retInt());

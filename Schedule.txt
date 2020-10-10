@@ -6,7 +6,7 @@
 
 4)Exception Handling, Wrapper class, POJO
 
-5) Autoboxing, unboxing, has-a & is-a relationship.
+5) Autoboxing, unboxing, has-a & is-a relationship, HasA : Composition & Aggregation.
 
 6)Inheritance (super, this), Overriding, Overloading, Multithreaded Programming
 

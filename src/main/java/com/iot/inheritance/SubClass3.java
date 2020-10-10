@@ -8,5 +8,10 @@ public class SubClass3 extends SubClass2{
 	{
 		return c;
 	}
+	
+	public void printC()
+	{
+		System.out.println(c);
+	}
 
 }

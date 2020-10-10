@@ -19,5 +19,10 @@ public class SuperClass {
 	  { 
 		  return a*b; 
 	  }
+	
+	final public void method1()
+	{
+		System.out.println("Super Class Final Method");
+	}
 
 }

@@ -4,9 +4,11 @@
 
 3)Packages & Interfaces , Dynamic resolution
 
-4)Exception Handling, Wrapper class, POJO
+4)Exception Handling, Wrapper class, POJO (Plain Old Java Object: A class which has only variables, constructors and getters & setters but no major business logic)
 
 5) Autoboxing, unboxing, has-a & is-a relationship, HasA : Composition & Aggregation.
+
+Immutable classes, Hashcode and equals
 
 6)Inheritance (super, this), Overriding, Overloading, Multithreaded Programming
 
@@ -18,7 +20,7 @@
 
 10) Java collections: implementation of utilities (collections)
 
-11) Enumerations, Autoboxing, and Annotations (Metadata)
+11) Enumerations and Annotations (Metadata)
 
 12) Generics and I/O
 

@@ -4,9 +4,8 @@ public class OnlyOneObjectMainClass {
 
 	public static void main(String[] args) {
 		
-		
-		OnlyOneObjectClass onlOnObjClas = new OnlyOneObjectClass();
-		
+		OnlyOneObjectClass.method1();
+		OnlyOneObjectClass.method1();
 	}
 
 }

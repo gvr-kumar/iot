@@ -1,30 +1,25 @@
 package com.iot.onlyoneobject;
 
   public class OnlyOneObjectClass {
-	
 		
-	 private OnlyOneObjectClass() 
-	 {
-		  
-	 }
+	  /*
+		 * private OnlyOneObjectClass() {
+		 * 
+		 * }
+		 */
+	 private static OnlyOneObjectClass obj1 = new OnlyOneObjectClass();
 
-	  public static void method1() 
+	  public static void onlyObjMethod() 
 	  { 
-		  final  OnlyOneObjectClass obj1  = new OnlyOneObjectClass(); 
 		  System.out.println(obj1);
+		  
 	  }
+	  
+		/*
+		 * public static void main(String[] args) {
+		 * 
+		 * OnlyOneObjectClass.onlyObjMethod(); OnlyOneObjectClass.onlyObjMethod(); }
+		 */
 	 	 
-	 
 }
-
-
-/*
- * private, 
- * protected
- * 
- * Final static
- * 
- * constructors
- * 
- */
 

@@ -4,7 +4,7 @@
 
 3)Packages & Interfaces , Dynamic resolution
 
-4)Exception Handling, Wrapper class, POJO (Plain Old Java Object: A class which has only variables, constructors and getters & setters but no major business logic)
+4)Exception Handling (when to use which exception), Wrapper class, POJO (Plain Old Java Object: A class which has only variables, constructors and getters & setters but no major business logic)
 
 5) Autoboxing, unboxing, has-a & is-a relationship, HasA : Composition & Aggregation.
 
@@ -12,7 +12,7 @@ Immutable classes, Hashcode and equals
 
 6)Inheritance (super, this), Overriding, Overloading, Multithreaded Programming
 
-7)Annotations
+7)Annotations; String Pool
 
 8) what is JVM? Performance? Heap, stack, differences? out of memory errors.
 
@@ -44,7 +44,7 @@ Frameworks:
 
 4) Hibernate
 
-5) Kafka
+5) Kafka (events)
 
 6) Data Indexing and parsing (searching): Elastic search
 
@@ -60,7 +60,7 @@ Misc:
 
 1) Formatting and plugins
 
-2) Unit testing
+2) Unit testing; Logs
 
 3)Eclipse and other IDEs
 

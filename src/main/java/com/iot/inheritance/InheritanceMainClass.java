@@ -6,6 +6,8 @@ public class InheritanceMainClass {
 	 * 
 	 * Parent class or base class:
 	 * 
+	 * A child class cannot have multiple parent classes : multiple inheritance is NOT possible in Java 
+	 * 
 	 * A final class cannot be extended or cannot be a parent class
 	 *
 	 * Final methods cannot be overridden

@@ -1,25 +1,40 @@
 package com.iot.onlyoneobject;
 
-  public class OnlyOneObjectClass {
-		
-	  /*
-		 * private OnlyOneObjectClass() {
-		 * 
-		 * }
-		 */
-	 private static OnlyOneObjectClass obj1 = new OnlyOneObjectClass();
+//singleton design pattern
 
-	  public static void onlyObjMethod() 
-	  { 
-		  System.out.println(obj1);
-		  
-	  }
-	  
-		/*
-		 * public static void main(String[] args) {
-		 * 
-		 * OnlyOneObjectClass.onlyObjMethod(); OnlyOneObjectClass.onlyObjMethod(); }
-		 */
-	 	 
+public class OnlyOneObjectClass {
+	
+	static OnlyOneObjectClass oneObjClass;
+	
+	private OnlyOneObjectClass()
+	{
+		System.out.println("Instantiating");
+	}
+	
+	public static OnlyOneObjectClass OnlyOneObjectClassMthd()
+	{
+		 if(oneObjClass==null)
+		 {
+			 oneObjClass = new OnlyOneObjectClass();
+		 }
+		 return oneObjClass;
+	}
+	
+	
+	 
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
 }
-

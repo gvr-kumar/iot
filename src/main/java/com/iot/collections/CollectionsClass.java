@@ -6,7 +6,15 @@ public class CollectionsClass {
 	 * 
 	 * Collections: are wrappers on primitive data types and arrays
 	 * 
-	 * Collections uses collections
+	 * Collections uses collections.
+	 * 
+	 * Data structures in other languages are called collections in Java.
+	 * 
+	 * Data & information:
+	 * 
+	 * Collections are used to store and perform actions on data
+	 * 
+	 * 
 	 * 
 	 * 
 	 */

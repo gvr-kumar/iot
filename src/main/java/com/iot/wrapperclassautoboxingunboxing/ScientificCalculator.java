@@ -2,12 +2,13 @@ package com.iot.wrapperclassautoboxingunboxing;
 
 //Creating a custom Wrapper class 
 
-public class Calculator {
+public class ScientificCalculator{
 	
 	private int a;
 	private int b;
 	private int c;
 	
+	private Calculator calc = new Calculator();
 	
 	public int getA() {
 		return a;
@@ -27,28 +28,22 @@ public class Calculator {
 		this.b = b;
 	}
 
-
-	public int addition(int a, int b)
+	public int absValue(int a)
 	{
-		c= a + b;
-		return c;
+		if(a<0)
+		{
+			a = -a;
+		}
+		return a;
 	}
-	public int substract(int a, int b)
+	public int exponent(int a, int b)
 	{
-		c= a - b;
-		return c;
+		int d = 1;
+		for(int i=1;i<=b;i++)
+		{
+			d = calc.multiply(a, d);
+		}
+		return d;
 	}
-	public int multiply(int a, int b)
-	{
-		c= a * b;
-		return c;
-	}
-	
-	public int division(int a, int b)
-	{
-		c= a / b;
-		return c;
-	}
-	
 
 }

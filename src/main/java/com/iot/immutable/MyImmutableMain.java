@@ -1,4 +1,4 @@
-package com.iot.Immutable;
+package com.iot.immutable;
 
 public class MyImmutableMain {
 

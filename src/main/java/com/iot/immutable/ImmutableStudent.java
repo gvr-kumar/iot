@@ -1,4 +1,4 @@
-package com.iot.Immutable;
+package com.iot.immutable;
 
 //An Immutable class
 

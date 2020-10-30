@@ -1,4 +1,4 @@
-package com.phoenix.training;
+package com.iot.phoenix.training;
 
 public class ArrayCrudExample {
 

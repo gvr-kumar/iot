@@ -29,6 +29,7 @@ public class CollectionsClass {
 	 * 
 	 * Map is an interface which do not come under collections but contains Key, value pairs. 
 	 * 
+	 * ArrayList: 
 	 * 
 	 */
 	

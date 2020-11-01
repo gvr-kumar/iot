@@ -10,7 +10,12 @@ public class BankOfAmerica extends AbstractBank{
 	 * If we don't define all the methods then implementing class should be declared as an Abstract class.
 	 */
 	
-
+	public void getBankName()
+	{
+		System.out.println("Bank Of America");
+	}
+	
+	
 	public void checkBalance() {
 		System.out.println("Check Current Balance-BOFA");
 	}

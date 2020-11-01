@@ -10,6 +10,11 @@ public class WellsFargo extends AbstractBank{
 	 * 
 	 * Check Balance method is from AbstractBank class
 	 */
+	
+	public void getBankName()
+	{
+		System.out.println("Wells Fargo");
+	}
 
 	public void withdrawal() {
 		System.out.println("Withdraw money-WellsFargo");

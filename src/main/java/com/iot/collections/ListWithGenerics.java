@@ -27,6 +27,8 @@ public class ListWithGenerics {
 		
 		WellsFargo wf = new WellsFargo();
 		
+		
+		
 		List<Integer> intArrList = new ArrayList<Integer>();
 		
 		ArrayList<String> strArrList = new ArrayList<String>();
@@ -59,6 +61,8 @@ public class ListWithGenerics {
 		}
 		
 		//H.W: create a list with super class and child class objects, also include abstract class, ex: fruits or cars
+		
+		
 	}
 
 }

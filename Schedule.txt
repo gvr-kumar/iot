@@ -20,6 +20,8 @@ Immutable classes, Hashcode and equals
 
 10) Java collections: implementation of utilities (collections)
 
+Cloning, Serializable (Serialization), Generics, Transient
+
 11) Enumerations and Annotations (Metadata)
 
 12) Generics and I/O

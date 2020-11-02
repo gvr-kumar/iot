@@ -20,6 +20,8 @@ public interface Bank{
 	
 	public void withdrawal();
 	
-	public void depositMoney();	
+	public void depositMoney();
+	
+	public void getBankName();
 	
 }

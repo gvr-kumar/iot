@@ -8,6 +8,10 @@ public class CitiBank implements Bank{
 	 * Here for example, depositMoney method is not defined (implemented)
 	 */
 	
+	public void getBankName()
+	{
+		System.out.println("Citi Bank");
+	}
 
 	public void checkBalance() {
 		System.out.println("Check Current Balance-Citi");

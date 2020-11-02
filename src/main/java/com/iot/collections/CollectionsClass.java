@@ -1,5 +1,8 @@
 package com.iot.collections;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CollectionsClass {
 	
 	/*Array: consecutive memory locations are allocated to an array.
@@ -14,9 +17,39 @@ public class CollectionsClass {
 	 * 
 	 * Collections are used to store and perform actions on data
 	 * 
+	 * Linked Lists: 
 	 * 
+	 * List and Set, queue are the basic collections (interfaces) in Java.
 	 * 
+	 * List and Set are linear data structures.
+	 * 
+	 * Lists contain duplicates.
+	 * 
+	 * Sets do not contain duplicates
+	 * 
+	 * Map is an interface which do not come under collections but contains Key, value pairs. 
+	 * 
+	 * ArrayList: 
 	 * 
 	 */
+	
+	public static void main(String[] args) {
+		
+		
+		List a = new ArrayList();//parent class reference can be assigned to child class object
+		
+		
+	}
+	
+	/**
+	 *Exmpl method
+	 * @param a
+	 * @param b
+	 * @return
+	 */
+	public static int exmplMethod(int a, int b)
+	{
+		return 0;
+	}
 
 }

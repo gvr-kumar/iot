@@ -12,29 +12,31 @@ public class OneTryMultplCatches {
 		
 		try {
 			
-			System.out.println(b[5]);
+				System.out.println(b[5]);
+			}catch(ArrayIndexOutOfBoundsException e)
+			{
+				System.out.println("Array Index Out of Bounds Exception");
+			}
+		
+		try {
 			
 			System.out.println(s.length());
-		
-			System.out.println(a/0);
-			
-			
 		}catch(NullPointerException e)
 		{
 			System.out.println("Null Pointer Exception");
 		}
-		catch(ArithmeticException e)
+		
+		try {
+			System.out.println(a/0);
+		}catch(ArithmeticException e)
 		{
 			System.out.println("Arithmetic Exception");
 		}
-		catch(ArrayIndexOutOfBoundsException e)
-		{
-			System.out.println("Array Index Out of Bounds Exception");
-		}
-		catch(Exception e)
-		{
-			System.out.println("Exception class: " + e);
-		}
+		
+		/*
+		 * catch(Exception e) { System.out.println("Exception class: " + e); }
+		 */
+		
 	}
 
 }

@@ -29,7 +29,8 @@ public class CollectionsClass {
 	 * 
 	 * Map is an interface which do not come under collections but contains Key, value pairs. 
 	 * 
-	 * ArrayList: 
+	 * ArrayList: Arraylist collections should be used when we are not performing index based operations 
+	 * like adding or removing any elements at particular index. Should be used when only collecting the data.
 	 * 
 	 */
 	

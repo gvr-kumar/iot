@@ -3,7 +3,7 @@ package com.iot.interfaces;
 public interface Bank{
 
 	/*An Interface contains only method declarations. Their definitions (implementations) are 
-	 * provided inside the classes which implement these interfaces.
+	 * provided inside the classes (can be abstract or a concrete class) which implement these interfaces.
 	 * 
 	 * interface keyword is used to define an Interface.
 	 * 

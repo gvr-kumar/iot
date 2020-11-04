@@ -2,14 +2,14 @@ package com.iot.inheritance;
 
 //Concrete class which extends abstract class , it can override the abstract class methods and should have all the methods declared in the interface.
 
-public class Tesla extends ElectricCar{
+public class BMW extends ElectricCar{
 
 	public void getCarName() {
-		System.out.println("Tesla");
+		System.out.println("BMW");
 	}
 	
 	public void mileage(float noOfMiles, float batteryCapacity) {
-		System.out.println("Tesla electric car mileage");
+		System.out.println("BMW electric car mileage");
 		
 	}
 	
@@ -41,7 +41,7 @@ public class Tesla extends ElectricCar{
 		
 	}	
 	
-	public void teslaOwnMethod()
+	public void bmwOwnMethod()
 	{
 		
 	}

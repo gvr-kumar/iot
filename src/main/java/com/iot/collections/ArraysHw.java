@@ -2,7 +2,7 @@ package com.iot.collections;
 
 public class ArraysHw {
 	
-	int[] simplArr = new int[5];
+	int[] simplArr = new int[10];
 	
 	
 	public int[] createArray()
@@ -40,17 +40,33 @@ public class ArraysHw {
 	
 	public int[] removElementFrmArr(int index, int[] arrRem)
 	{
-		int[] finalArr = new int[arrRem.length-1];
+		int[] arrFinal = new int[arrRem.length];
 		
-		for(int i=0, j=0; i<arrRem.length;i++)
-		{
-			if(index == i)
+		try {
+			if(index>arrRem.length || index <0 )
 			{
-				continue;
+				System.out.println("Index is out of bounds, please send a valid index and Array remains the same.");
+				arrFinal = arrRem;
 			}
-			finalArr[j++] = arrRem[i];
-		}
-		return finalArr;
+			else 
+			{
+				for(int i=0; i<arrRem.length;i++)
+				{
+					
+						if(i < index)
+						{
+							arrFinal[i] = arrRem[i];
+						}
+						else if(i >= index)
+						{
+							arrFinal[i] = arrRem[i+1];
+						}
+				}
+			}
+		}catch(Exception e)
+		{}
+		
+		return arrFinal;
 		
 	}
 	

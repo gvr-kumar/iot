@@ -32,9 +32,21 @@ public class ArraysHw {
 	
 	public void readArray(int[] arrRead)
 	{
-		for(int i=0; i<arrRead.length;i++)
+		try
 		{
-			System.out.println(arrRead[i]);
+			if(arrRead == null || arrRead.length<=0)
+			{
+				System.out.println("array length is 0.");
+			}
+			else
+			{
+				for(int i=0; i<arrRead.length;i++)
+				{
+					System.out.println(arrRead[i]);
+				}
+			}
+		}catch(Exception e)
+		{			
 		}
 	}
 	

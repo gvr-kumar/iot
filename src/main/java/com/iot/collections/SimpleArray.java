@@ -22,7 +22,7 @@ public class SimpleArray {
 		//Hw: take an array of size 5 and perform C,R,U,D; 
 		
 		
-		int[] arrEx = new int[5];
+		int[] arrEx = new int[10];
 		
 		arrEx = arrHw.createArray();
 		System.out.println("Add elements to array");
@@ -33,11 +33,13 @@ public class SimpleArray {
 		System.out.println("Update array");
 		arrHw.readArray(arrEx);
 		
-		/*
-		 * arrHw.removElementFrmArr(3, arrEx);
-		 * 
-		 * System.out.println("Remove array"); arrHw.readArray(arrEx);
-		 */
+		
+		arrEx = arrHw.removElementFrmArr(3, arrEx);
+		  
+		  System.out.println("Remove array"); 
+		  
+		  arrHw.readArray(arrEx);
+		 
 		
 		
 	}

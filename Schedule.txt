@@ -18,7 +18,7 @@ Immutable classes, Hashcode and equals
 
 9)Garbage collection
 
-10) Java collections: implementation of utilities (collections)
+10) Java collections: implementation of utilities (collections); Concurrent modification exception. Comparable & Comparator
 
 Cloning, Serializable (Serialization), Generics, Transient
 

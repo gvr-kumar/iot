@@ -34,5 +34,7 @@ public class IteratorRemove {
 			}
 		}
 		System.out.println(intArr);
+		
+		//H.W: try all methods in arraylist in one example
 	}
 }

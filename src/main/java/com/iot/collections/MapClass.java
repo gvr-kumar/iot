@@ -59,7 +59,7 @@ public class MapClass {
 		List<Integer> intList= new ArrayList<Integer>();
 		intList.add(10);
 		intList.add(20);
-		System.out.println(intList);
+		System.out.println(intList);//
 		
 		
 	}

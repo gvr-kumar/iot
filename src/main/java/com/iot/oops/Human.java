@@ -171,4 +171,10 @@ public class Human {
 		return this.salary();
 	}
 
+	@Override
+	public String toString() {
+		return this.firstName + ", " + this.lastName + ", " + this.age + ", " + this.country;
+		
+	}
+	
 }

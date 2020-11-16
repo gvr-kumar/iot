@@ -15,7 +15,7 @@ Immutable classes
 
 6)Inheritance (super, this), Overriding, Overloading, Multithreaded Programming
 
-7)Annotations; String Pool
+7)Annotations (JDK annotations); String Pool
 
 8) what is JVM? Performance? Heap, stack, differences? out of memory errors.
 

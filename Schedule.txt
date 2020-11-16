@@ -8,7 +8,7 @@
 
 5) Autoboxing, unboxing, has-a & is-a relationship, HasA : Composition & Aggregation.
 
-Immutable classes, Hashcode and equals
+Immutable classes
 
 6)Inheritance (super, this), Overriding, Overloading, Multithreaded Programming
 
@@ -18,7 +18,8 @@ Immutable classes, Hashcode and equals
 
 9)Garbage collection
 
-10) Java collections: implementation of utilities (collections)
+10) Java collections: implementation of utilities (collections); Concurrent modification exception. Comparable & Comparator
+Hashcode and equals
 
 Cloning, Serializable (Serialization), Generics, Transient
 

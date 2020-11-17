@@ -92,6 +92,12 @@ public class ListWithGenerics {
 		{
 			tmp.getCarName();
 		}
+		
+		
+		/*H.W: ]
+		 * 
+		 * 
+		 */
 	}
 
 }

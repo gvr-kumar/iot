@@ -170,11 +170,25 @@ public class Human {
 	{
 		return this.salary();
 	}
+	
+	//
 
 	@Override
 	public String toString() {
 		return this.firstName + ", " + this.lastName + ", " + this.age + ", " + this.country;
 		
 	}
+	
+	//If we want to check 2 objects equality then we override the equals method: 
+	
+	@Override
+	public boolean equals(Object obj) {
+		
+		Alien h = (Alien) obj;
+		
+		return this.firstName.equals(h.name);
+		 
+	}
+	
 	
 }

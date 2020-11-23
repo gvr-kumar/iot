@@ -33,6 +33,54 @@ public class MainClass {
 		Collections.sort(objsList); //sorting the objects
 		
 		System.out.println(objsList);
+		
+		
+		//*****************************************VC Part*****************************************************
+				
+		List<String> fruitsList = new ArrayList<String>();
+		
+		fruitsList.add("Apple");
+		fruitsList.add("Strawberry");	
+		fruitsList.add("Pear");
+		fruitsList.add("Mango");
+				
+		List<String> chocolatesList = new ArrayList<String>();
+		chocolatesList.add("Hershey'sKisses");
+		chocolatesList.add("Cadbury");
+		chocolatesList.add("Lindtor");
+		chocolatesList.add("M&Ms");
+		
+		GiftBasket fruitBasket1 = new GiftBasket("Fruit",12,12.5f);
+		fruitBasket1.setBasketList(fruitsList);
+		
+		
+		//GiftBasket fruitBasket2 = new GiftBasket("Mango",24,6.99f);
+	    
+		GiftBasket chocolateBasket1 = new GiftBasket("Chocolate",10,4.99f);
+		//GiftBasket chocolateBasket2 = new GiftBasket("Hersheys",9,9.99f); 
+		chocolateBasket1.setBasketList(chocolatesList);
+		
+		List<GiftBasket> GiftBasketList = new ArrayList<GiftBasket>();
+		
+		Collections.addAll(GiftBasketList, fruitBasket1,chocolateBasket1);
+		
+		System.out.println("=================================");
+		System.out.println("****Before Sort****");
+		
+		//System.out.println(GiftBasketList + ":" + GiftBasketList.get);
+		
+		
+		Collections.sort(GiftBasketList);
+		Collections.sort(fruitBasket1.getBasketList());
+		Collections.sort(chocolateBasket1.getBasketList());
+		
+		System.out.println("****After Sort****");
+		
+		System.out.println(GiftBasketList);
+		
+		System.out.println();
+		
+		
 	}
 
 }

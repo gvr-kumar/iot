@@ -1,6 +1,7 @@
 package com.iot.comparison;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class GiftBasket implements Comparable<GiftBasket>{
@@ -13,7 +14,8 @@ public class GiftBasket implements Comparable<GiftBasket>{
 	List<String> basketList = new ArrayList<String>();
 		
 	public List<String> getBasketList() {
-		return basketList;
+		 Collections.sort(basketList);
+		 return basketList;
 	}
 
 	public void setBasketList(List<String> basketList) {
@@ -54,13 +56,13 @@ public GiftBasket(String basketName, int qty, float price) {
 
 public int compareTo(GiftBasket o) {
 		
-		return this.basketName.compareTo(o.basketName);
+		return this.basketName.compareTo(o.basketName); //here 	qualifying parameter is basketName
 	}
 
 @Override
 public String toString() {
 	// TODO Auto-generated method stub
-	return this.basketName;
+	return this.basketName + " : " + this.getBasketList();
 }
 	
 }

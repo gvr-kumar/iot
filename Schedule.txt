@@ -59,7 +59,7 @@ Frameworks:
 
 
 
-Misc: 
+MMisc: 
 
 1) Formatting and plugins
 

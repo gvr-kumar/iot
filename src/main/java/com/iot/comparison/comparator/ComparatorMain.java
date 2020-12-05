@@ -7,6 +7,18 @@ import java.util.List;
 import com.iot.oops.Human;
 
 public class ComparatorMain {
+	
+	/***
+	 * 
+	 * Comparable: if we want to sort objects based on a single parameter (instance variable) then we go for comparable interface implementation 
+	 * by overriding compareTo method.
+	 * 
+	 * Comparator: if we want to sort objects based on more than one parameter (instance variables) then we go for comparator interface implementation 
+	 * 
+	 * by overriding compare method.
+	 * 
+	 * @param args
+	 */
 
 	public static void main(String[] args) {
 		

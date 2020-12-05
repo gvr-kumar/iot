@@ -16,23 +16,23 @@ public class MainClass {
 		CompObjs ravi = new CompObjs("Ravi", "Alpharetta, USA", 30);
 
 		
-		System.out.println(kishore.compareTo(vasantha));
-		System.out.println(kishore.compareTo(kumar));
-		System.out.println(ravi.compareTo(kumar));
+		//System.out.println(kishore.compareTo(vasantha));
+		//System.out.println(kishore.compareTo(kumar));
+		//System.out.println(ravi.compareTo(kumar));
 		
 		List<CompObjs> objsList = new ArrayList<CompObjs>();
 		
 		Collections.addAll(objsList, kishore, kumar, vasantha, ravi);
 		
-		System.out.println("----Before sort---");
+		//System.out.println("----Before sort---");
 		
-		System.out.println(objsList);
+		//System.out.println(objsList);
 		
-		System.out.println("----after sort---");
+		//System.out.println("----after sort---");
 		
 		Collections.sort(objsList); //sorting the objects
 		
-		System.out.println(objsList);
+		//System.out.println(objsList);
 		
 		
 		//*****************************************VC Part*****************************************************
@@ -67,19 +67,19 @@ public class MainClass {
 		System.out.println("=================================");
 		System.out.println("****Before Sort****");
 		
-		//System.out.println(GiftBasketList + ":" + GiftBasketList.get);
-		
-		
-		Collections.sort(GiftBasketList);
-		Collections.sort(fruitBasket1.getBasketList());
-		Collections.sort(chocolateBasket1.getBasketList());
-		
-		System.out.println("****After Sort****");
 		
 		System.out.println(GiftBasketList);
 		
 		System.out.println();
 		
+		
+		Collections.sort(GiftBasketList);
+		
+		System.out.println("****After Sort****");
+		
+		System.out.println(GiftBasketList);
+		
+		System.out.println();		
 		
 	}
 

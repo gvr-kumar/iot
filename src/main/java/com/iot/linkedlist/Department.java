@@ -31,7 +31,7 @@ public class Department {
 	
 	//for a given department, find number of employees with their names
 	
-	//for a given employee, find his details and department details
+	//for a given employee, find its details and department details
 	
 	//onboarding employees, setup departments
 	

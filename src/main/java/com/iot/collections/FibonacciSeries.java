@@ -83,45 +83,94 @@ public class FibonacciSeries {
 	//Fibonacci formula: fn = fn-1 + fn-2: try with recursion; method with arraylist : all operations
 		
 	//[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181]
-		
-		
 	
 		int a = 0;
 		int b = 1;
-		int sum1 = 0;
 		int c = 0;
-		int d=0;
 		try {
-			/*
-			 * if (n <= 0) { System.out.println("Please provide a valid value."); } else
-			 * if(n==1) { System.out.println(a); } else if(n>=1) {
-			 */
-				
-				for (int i = 1; i <= n; i++)
-				{
-					System.out.println(a);
-					
-					sum1 = c + d + sum1;
-					
-					
-					
-					c = b;
-					
-					
-					
-					/*
-					 * if(n==2) { System.out.println(a); System.out.println(b); a=b; }
-					 */
-					
-				}
-					
-		
-				/*
-				 * if (n >= 2) { for (int i = 2; i <= n; i++) { if (i == 2) { sum1 = sum1 + b; }
-				 * else { //sum1 = fibSeries.get((i - 1) - 1) + fibSeries.get((i - 2) - 1); } }
-				 * }
-				 */
-			//}
+			
+			  if (n <= 0) 
+			  { 
+				  System.out.println("Please provide a valid value."); 
+			  } else if(n==1)
+			  {
+				  System.out.println(a);
+			  }
+			  else if(n>=2)
+			  {
+				  System.out.println(a);
+				  for (int i = 2; i <= n; i++)
+				  {
+					  if(i==2)
+					  {
+						  System.out.println(b);
+					  }
+					  else
+					  {
+						  c = a + b;
+						  a=b;
+						  b = c;
+						  System.out.println(c);
+					  }					 	
+				  }
+			  }
+		} catch (Exception e) {
+		}
+	}
+	
+	/***
+	 * method to return value at a particular index in fibonacci series
+	 * @param n
+	 * @return
+	 */
+	
+	public void getValFiboSeries(int n, int index) {
+
+		int a = 0;
+		int b = 1;
+		int c = 0;
+		try {
+			if(index<=n)
+			{
+			  if (index <= 0) 
+			  { 
+				  System.out.println("Please provide a valid value."); 
+			  } else if(index==1)
+			  {
+				  System.out.println(a);
+			  }
+			  else if(index>=2)
+			  {
+				  if(index==2 || index==3)
+				  {
+					  System.out.println(b);
+				  }
+				  else
+				  {
+					  //System.out.println(a);
+					  for (int i = 2; i <= n; i++)
+					  {
+						  if(i==2)
+						  {}
+						  else
+						  {
+							  c = a + b;
+							  a=b;
+							  b = c;
+							  if(index == i)
+							  {
+								  System.out.println(c);
+								  break;
+							  }
+						  }					 	
+					  }
+				  }
+			  }
+			}
+			else
+			{
+				System.out.println("Provide a valid index.");
+			}
 		} catch (Exception e) {
 		}
 	}

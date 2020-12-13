@@ -16,6 +16,6 @@ public class LinkedList {
 	Human ravi = new Human("Kumar", "Ravi", 27, "India");
 	
 	
-	lnkdList.add();
+	//lnkdList.add();
 
 }

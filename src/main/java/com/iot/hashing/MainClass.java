@@ -19,9 +19,26 @@ public class MainClass {
 		Book beLoved = new Book("Classics", "Beloved", "Toni Morrison", 12.19f);
 
 		
+		LibraryService libserv = new LibraryService();
 		
+		libserv.addBookToGenre(lifeOfPi);
+		libserv.addBookToGenre(threeMusk);
+		libserv.addBookToGenre(theCallOfWild);
+		libserv.addBookToGenre(toKillMockBird);
+		libserv.addBookToGenre(littlWomen);
+		libserv.addBookToGenre(beLoved);
 		
+		System.out.println(libserv.getCount("Classics"));
+	     libserv.printTitles("Classics");
 		
+		//libserv.removeBook(toKillMockBird);
+		
+	     libserv.updateBook(toKillMockBird);
+		
+		System.out.println(libserv.getCount("Classics"));
+		libserv.printTitles("Classics");
+		
+		libserv.searchBook("Classics","Beloved");
 		
 		//HashMap<String, Book> 
 		

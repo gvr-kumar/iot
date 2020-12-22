@@ -59,4 +59,9 @@ public class Book implements Comparable<Book>{
 	public int compareTo(Book b) {
 		return this.bookTitle.compareTo(b.bookTitle);
 	}
+	
+	@Override
+	public int hashCode() {
+		return bookGenre.hashCode() + bookTitle.hashCode();
+	}
 }

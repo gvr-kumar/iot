@@ -22,7 +22,6 @@ public class LibraryService {
 		bookHashMp.put(bkObj.getBookGenre(), bksLst);
 		
 	}
-
 	public void removeBook(Book bkObj)
 	{
 		List<Book> bksLst = bookHashMp.get(bkObj.getBookGenre());	
@@ -133,7 +132,6 @@ public class LibraryService {
 	}
 		
 		
-	}
-	
+	}	
 	//Add, Remove, update, search, getCount 
 }

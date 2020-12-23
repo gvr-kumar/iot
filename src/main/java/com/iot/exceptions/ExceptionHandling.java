@@ -1,7 +1,5 @@
 package com.iot.exceptions;
 
-import org.apache.commons.logging.LogConfigurationException;
-
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -42,7 +40,7 @@ import java.io.IOException;
  */
 
 public class ExceptionHandling {
-	LogConfigurationException ex = new LogConfigurationException();
+	
 	
 	public void throwException(int intParam) throws Throwable //throws exception type should match with the catch exception type 
 	{

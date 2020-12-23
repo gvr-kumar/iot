@@ -5,4 +5,11 @@
   <version>0.0.1</version>
   <name>BIS</name>
   <description>Banking Internet System.</description>
+  <!--<dependencies>
+  <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>4.5.10</version>
+    </dependency>
+    </dependencies>-->
 </project>

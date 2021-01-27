@@ -34,7 +34,11 @@ public class Sport {
 		//we need to typecast obj to Sport type as obj is of Object type
 		Sport sprt1 = (Sport)obj;
 		System.out.println("Equals override method");
-		return (sprt1.sportName.equals(this.sportName));
+		//if()
+		//{
+			
+		//}
+		return (sprt1.getSportName().equals(this.sportName));
 	}
 
 }

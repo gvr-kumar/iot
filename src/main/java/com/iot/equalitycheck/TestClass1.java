@@ -25,12 +25,19 @@ public class TestClass1 {
 	
 	@Override
 	public boolean equals(Object obj) {
+		boolean b = false;
 		
 		TestClass1 t1 = (TestClass1)obj;
 		if(this.FirstName.equals(t1.FirstName) && this.LastName.equals(t1.LastName))
-		return true;
+		{
+			b = true;		
+		}
+		if(b)
+			System.out.println("Objects are equal");	
+		else
+			System.out.println("objects are NOT equal");
 		
-		return false;
+		return b;
 	}
 
 }

@@ -10,7 +10,9 @@ public class EqlChclMainClas2 {
 	 * 
 	 * rules when overriding equals method when checking equality of objects: RSTC rules
 	 * 
-	 * 1) Reflexive (x.equals(x)) 2) Symmetry: (x.equals(y) and y.equals(x)) 3) Transitive: a.equals(b.equals(c)) then c.euqals(a) 4) Consistent 5) Non null comparison
+	 * 1) Reflexive (x.equals(x)) 2) Symmetry: (x.equals(y) and y.equals(x)) 3) Transitive: a.equals(b.equals(c)) then c.euqals(a) 
+	 * 
+	 * 4) Consistent (x.equals(y)) 5) Non null comparison: 
 	 * 
 	 * 
 	 */

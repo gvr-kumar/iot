@@ -58,6 +58,7 @@ public class Money {
 		} else if (!currency.equals(other.currency))
 			return false;
 		return true;
+		
 	}
 	
 	/*

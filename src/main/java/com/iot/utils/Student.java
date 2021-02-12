@@ -30,19 +30,13 @@ public class Student {
 		this.stdName = stdName;
 		this.stdAddress = stdAddress;
 	}
-
-	
-	
-	  
-	
 	 
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((stdAddress == null) ? 0 : stdAddress.hashCode());
 		result = prime * result + ((stdId == null) ? 0 : stdId.hashCode());
-		result = prime * result + ((stdName == null) ? 0 : stdName.hashCode());
 		return result;
 	}
 	@Override
@@ -54,20 +48,10 @@ public class Student {
 		if (getClass() != obj.getClass())
 			return false;
 		Student other = (Student) obj;
-		if (stdAddress == null) {
-			if (other.stdAddress != null)
-				return false;
-		} else if (!stdAddress.equals(other.stdAddress))
-			return false;
 		if (stdId == null) {
 			if (other.stdId != null)
 				return false;
 		} else if (!stdId.equals(other.stdId))
-			return false;
-		if (stdName == null) {
-			if (other.stdName != null)
-				return false;
-		} else if (!stdName.equals(other.stdName))
 			return false;
 		return true;
 	}

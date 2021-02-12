@@ -15,11 +15,13 @@ public class HashMapItr {
 	 * 
 	 */
 	
-	private static Map student = new HashMap<String, Student>();
-	private static Set stdKeys = new HashSet<String>(); 
+	private static Map<String, Student> student = new HashMap<String, Student>();
+	private static Set<String> stdKeys = new HashSet<String>(); 
+	
+	
 	
 	//add entity
-	
+
 	public static void AddEntity(Student stdObj)
 	{
 		if(stdObj != null)
@@ -32,12 +34,7 @@ public class HashMapItr {
 	
 	public static Student RetrieveEntity(String stdId)
 	{
-		Student std = null; 
-		if(student.containsKey(stdId))
-		{
-			std = (Student) student.get(stdId);
-		}
-		return std;
+		return student.get(stdId);
 	}
 	
 	//display all the keys 
@@ -55,4 +52,20 @@ public class HashMapItr {
 		
 	}	
 	
+	//display contents of the hashmap
+	
+	public static void displMapContnts()
+	{
+		stdKeys = student.keySet();
+		//System.out.println(stdKeys);
+		Iterator<String> itr = stdKeys.iterator();
+		
+		while(itr.hasNext())
+		{
+			Student std = student.get(itr.next());
+			System.out.println(std);
+			System.out.println("\n");
+		}
+		
+	}
 }

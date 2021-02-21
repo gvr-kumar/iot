@@ -84,3 +84,40 @@ MMisc:
 11)Integrate with UI and DB
 
 12) UML diagrams 
+
+a0 a1 a2 a3 a4 a5 a6 a7
+2  3  4  5  6  7  8
+
+
+
+Kishore to Everyone (11:05 PM)
+
+1)Maintain the repository of Books
+
+2) Provide an utility to validate the existing books and add them to the repository
+
+3) if the book is available, then add it always to the repository
+
+4) checkin - check out of books should be the possibility
+
+5) At any point of time, utility should give us the snapshot of the repository.
+
+
+6) abandon the entity should be a possibility
+
+
+
+7)book - name, author, price, dept, procured date, status
+
+8) status : available / Checked out / Abandoned
+
+
+snapshot : 
+
+ the total books available : 4213423423
+
+ The # of books checked out : 234234
+
+ the number of books at DEPT1 : 234234 (Optional)
+
+  the number of books at DEP2 : 234234 (Optional)

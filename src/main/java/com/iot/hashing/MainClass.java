@@ -34,6 +34,9 @@ public class MainClass {
 	public static void main(String[] args) {
 		
 		Book lifeOfPi = new Book("Action and Adventure", "Life of Pi", "Yann Martel", 8.99f);
+		
+		Book lifeOfPi1 = new Book("Action and Adventure", "Life of Pi", "Yann Martel", 8.99f);
+		
 		Book threeMusk = new Book("Action and Adventure", "The Three Musketeers", "Alexandre Dumas", 14.99f);
 		Book theCallOfWild = new Book("Action and Adventure", "The Call of the Wild", "Jack London", 5.99f);
 		

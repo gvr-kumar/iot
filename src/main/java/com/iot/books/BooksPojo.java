@@ -40,7 +40,7 @@ public class BooksPojo {
 	 * 
 	 */
 	
-	private final String bookId;
+	//private final String bookId;
 	
 	private final String bookName;
 	
@@ -54,17 +54,9 @@ public class BooksPojo {
 	
 	private BookStatus bookStatus;
 	
-	
-	public BooksPojo(String bookName, String bookAuthor, String bookDept) {
-		super();
-		this.bookName = bookName;
-		this.bookAuthor = bookAuthor;
-		this.bookDept = bookDept;
-	}
-	
-	public BooksPojo(String bookId, String bookName, String bookAuthor, String bookDept, BookStatus bookStatus, String bookProcDate, Float bookPrice)
+	public BooksPojo(String bookName, String bookAuthor, String bookDept, BookStatus bookStatus, String bookProcDate, Float bookPrice)
 	{
-		this.bookId = bookId;
+		//this.bookId = bookId;
 		
 		this.bookName = bookName;
 		
@@ -81,10 +73,9 @@ public class BooksPojo {
 	
 	
 	
-	public String getBookId()
-	{
-		return bookId;
-	}
+	/*
+	 * public String getBookId() { return bookId; }
+	 */
 	
 	public String getBookName()
 	{
@@ -114,51 +105,40 @@ public class BooksPojo {
 	public void setBookStatus(BookStatus bookStatus) {
 		this.bookStatus = bookStatus;
 	}
+
+
+
+	
+	/*
+	 * @Override public int hashCode() { final int prime = 31; int result = 1;
+	 * result = prime * result + ((bookAuthor == null) ? 0 : bookAuthor.hashCode());
+	 * result = prime * result + ((bookDept == null) ? 0 : bookDept.hashCode());
+	 * result = prime * result + ((bookName == null) ? 0 : bookName.hashCode());
+	 * result = prime * result + ((bookPrice == null) ? 0 : bookPrice.hashCode());
+	 * result = prime * result + ((bookProcDate == null) ? 0 :
+	 * bookProcDate.hashCode()); result = prime * result + ((bookStatus == null) ? 0
+	 * : bookStatus.hashCode()); return result; }
+	 * 
+	 * @Override public boolean equals(Object obj) { if (this == obj) { return true;
+	 * } if (obj == null) { return false; } if (getClass() != obj.getClass()) {
+	 * return false; } BooksPojo other = (BooksPojo) obj; if (bookAuthor == null) {
+	 * if (other.bookAuthor != null) { return false; } } else if
+	 * (!bookAuthor.equals(other.bookAuthor)) { return false; } if (bookDept ==
+	 * null) { if (other.bookDept != null) { return false; } } else if
+	 * (!bookDept.equals(other.bookDept)) { return false; } if (bookName == null) {
+	 * if (other.bookName != null) { return false; } } else if
+	 * (!bookName.equals(other.bookName)) { return false; } if (bookPrice == null) {
+	 * if (other.bookPrice != null) { return false; } } else if
+	 * (!bookPrice.equals(other.bookPrice)) { return false; } if (bookProcDate ==
+	 * null) { if (other.bookProcDate != null) { return false; } } else if
+	 * (!bookProcDate.equals(other.bookProcDate)) { return false; } if (bookStatus
+	 * != other.bookStatus) { return false; } return true; }
+	 */
+	 
+	
+	
 	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((bookAuthor == null) ? 0 : bookAuthor.hashCode());
-		result = prime * result + ((bookDept == null) ? 0 : bookDept.hashCode());
-		result = prime * result + ((bookName == null) ? 0 : bookName.hashCode());
-		return result;
+	public String toString() {
+		return this.bookName + "-" + this.bookAuthor+ "-" + this.bookProcDate+ "-" + this.bookStatus + "-" + this.bookPrice;
 	}
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj) {
-			return true;
-		}
-		if (obj == null) {
-			return false;
-		}
-		if (getClass() != obj.getClass()) {
-			return false;
-		}
-		BooksPojo other = (BooksPojo) obj;
-		if (bookAuthor == null) {
-			if (other.bookAuthor != null) {
-				return false;
-			}
-		} else if (!bookAuthor.equals(other.bookAuthor)) {
-			return false;
-		}
-		if (bookDept == null) {
-			if (other.bookDept != null) {
-				return false;
-			}
-		} else if (!bookDept.equals(other.bookDept)) {
-			return false;
-		}
-		if (bookName == null) {
-			if (other.bookName != null) {
-				return false;
-			}
-		} else if (!bookName.equals(other.bookName)) {
-			return false;
-		}
-		return true;
-	}
-	
-	
-	
 }

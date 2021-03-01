@@ -25,13 +25,11 @@ public class DoubleLinkedListEx {
 	private static LlHumanNode prvNode;
 	private static LlHumanNode currNode;
 	private static LlHumanNode firstNode;
-	private static LlHumanNode lastNode;
-	
+	private static LlHumanNode lastNode;	
 	static int counter = 0;
 	
 	public static void prepareDblLinkedlist(LlHumanNode llObj)
-	{
-		//a b c
+	{		
 		if(prvNode != null)
 		{
 			prvNode.setFwdRef(llObj);

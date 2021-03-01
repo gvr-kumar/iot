@@ -14,6 +14,8 @@ public class LlHumanNode {
 	private String lname;
 	private String address;
 	private LlHumanNode fwdRef;
+	private LlHumanNode bwdRef;
+	
 	public LlHumanNode(String fname, String lname, String address) {
 		super();
 		this.fname = fname;
@@ -26,6 +28,14 @@ public class LlHumanNode {
 	public void setFwdRef(LlHumanNode fwdRef) {
 		this.fwdRef = fwdRef;
 	}
+	
+	public LlHumanNode getBwdRef() {
+		return bwdRef;
+	}
+	public void setBwdRef(LlHumanNode bwdRef) {
+		this.bwdRef = bwdRef;
+	}
+	
 	public String getFname() {
 		return fname;
 	}

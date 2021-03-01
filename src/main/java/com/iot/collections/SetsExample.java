@@ -12,14 +12,21 @@ public class SetsExample {
 	public static void main(String[] args) {
 		
 		/*
-		 * Sets does not allow duplicates like List
+		 * Sets does not allow duplicates like List (array list)
+		 * 
+		 * HashSet is backed with Hashmap (where keys are the values in the hashset, values of each key in hashmap are dummy values)
 		 * 
 		 * Hash Sets does not follow any order like arraylist and 
 		 * 
 		 * Tree set does not allow duplicates and sorts elements in ascending order
 		 * 
+		 * HW: add student objects to tree set 
 		 * 
+		 * TreeSet<String> tree_set = new TreeSet<String>(new 
+        	The_Comparator());
 		*/
+		
+		//10 20 30 40 50 60 70 80 10 90
 		
 		List<Integer> arrLstEx = new ArrayList<Integer>();
 		

@@ -22,6 +22,19 @@ public class DoubleLinkedListEx {
 	 * 
 	 */
 	
+	private static LlHumanNode prvNode;
+	private static LlHumanNode nxtNode;
+	private static LlHumanNode firstNode;
+	
+	public static void prepareDblLinkdList(LlHumanNode llObj) {
+		if (prvNode != null) {
+			prvNode.setFwdRef(llObj);
+		} else {
+			firstNode = llObj;
+		}
+		prvNode = llObj;
+	}
+	
 	
 	
 

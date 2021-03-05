@@ -21,6 +21,12 @@ Immutable classes, Helper
 10) Java collections: implementation of utilities (collections); Concurrent modification exception. Comparable & Comparator
 Hashcode and equals
 
+Linked Hash map and linked hash set
+
+facade
+
+concurrent hash map
+
 Cloning, Serializable (Serialization), Generics, Transient
 
 11) Enumerations and Annotations (Metadata)
@@ -34,6 +40,8 @@ Cloning, Serializable (Serialization), Generics, Transient
 15) Regular Expressions
 
 16) Servlets
+
+17) Design patterns with examples
 
 
 
@@ -97,7 +105,15 @@ MMisc:
 **/
 
 
+Homeworks:
 
+1) Books repo
+
+2) CHanges to breadcrumb method
+
+3) immutable: origin class, rename b,c,d classes
+
+4)serialization & de: multiple objects
 
 
 

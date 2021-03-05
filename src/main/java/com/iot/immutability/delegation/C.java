@@ -4,14 +4,15 @@ public class C {
 	
 	D d = new D();
 	
-	public void iAmC(B b)
+	public void iAmC(B b) 
 	{
 		b.setName("Kohli");
 		
-		System.out.println("I am class C, value of B is " +  b);
+		System.out.println("I am class C, value of d is " +  d);
 		C c  = new C();
 		d.iAmD(b);
 	}
+	
 	
 	
 	
@@ -20,5 +21,6 @@ public class C {
 	public String toString() {
 		return "I am class C";
 	}
+	 
 
 }

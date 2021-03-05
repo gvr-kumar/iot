@@ -112,6 +112,7 @@ public class DoubleLinkedListEx {
 	public static void deleteFirst()
 	{
 		LlHumanNode tempNode = firstNode.getFwdRef();
+		tempNode.setBwdRef(null);
 		firstNode = null;
 		counter--;
 		firstNode = tempNode;
@@ -178,6 +179,72 @@ public class DoubleLinkedListEx {
 		
 	}
 	
+	/**
+	 * To display breadcrumb till the name that is passed
+	 * 
+	 */
+	
+	 public static void displBreadCrumb(String fName) {
+		  int count = 0;
+		  boolean nameExist = false;
+		  LlHumanNode strtNode = firstNode;
+		  String name = "";	  
+		  try
+		  {
+			while(strtNode != null) {
+					
+				if (strtNode != null) {
+					name = strtNode.getFname();
+					count++;
+					if(name.equalsIgnoreCase(fName))
+					{
+						nameExist = true;
+						break;
+					}
+					else
+					{
+						strtNode = strtNode.getFwdRef();
+					}
+				}
+				name = "";
+			}
+			if(nameExist == true)
+			{
+				strtNode = firstNode;
+				for(int i=0;i < count; i++)
+				{
+					if (strtNode != null) 
+					{
+						name = strtNode.getFname();
+						System.out.print(name);
+						if (strtNode.getFwdRef() != null) 
+						{
+							if(name.equalsIgnoreCase(fName))
+							{
+								break;
+							}
+							System.out.print(" > ");
+							
+						}
+						strtNode = strtNode.getFwdRef();
+					}
+					
+				}
+			}
+			else
+			{
+				System.out.println("Name not found");
+			}
+		  }
+		  catch (Exception e) {}
+	}
+	 
+	/*
+	 * public class Main { public static void main(String[] args) {
+	 * System.out.print("\033[4;30m"); System.out.println("Hello World!");
+	 * System.out.print("\033[0m"); } }
+	 */
+	
 	 public static int printllCount()
 	  {
 		  //System.out.println("linked list count: "+ counter);
@@ -205,6 +272,7 @@ public class DoubleLinkedListEx {
 					strtNode = strtNode.getFwdRef();
 				}
 			}
+			System.out.println();
 		}
 	  
 }

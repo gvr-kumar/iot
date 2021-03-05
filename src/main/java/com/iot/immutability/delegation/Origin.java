@@ -1,21 +1,18 @@
 package com.iot.immutability.delegation;
 
-public class Origin {
+import com.iot.cloning.Address;
+import com.iot.cloning.Department;
+
+public class Origin{
 	
-	/**
-	 * 
-	 * Delegated Class: 
-	 * 
-	 * Creation Class: class in which objects are created.
-	 * 
-	 * Has a relationship: if we create an instance for class B inside the class or inside a method in : Origin 
-	 * then we say class Origin "has a" class B 
-	 * Similarly Origin has a relationship with class C
-	 * 
-	 * Is A relationship: When a class extends another class then we say "Is A"
+	private B b = new B("Darren");;
+	
+	
+
+	/*
+	 * @Override protected Origin clone() throws CloneNotSupportedException { Origin
+	 * orgn = (Origin) super.clone(); B b1 = (B) b.clone(); return orgn; }
 	 */
-	
-	B b = new B("Darren");
 	
 	public void callOrigin()
 	{

@@ -26,7 +26,7 @@ public class CloneMain {
 		
 		//Address dept2Addrs = new Address(dept1Addrs.getAddress1(), dept1Addrs.getAddress2(), dept1Addrs.getCity());
 		
-		
+
 		
 		try {
 			cs1.setDeptAddress(dept1Addrs);	

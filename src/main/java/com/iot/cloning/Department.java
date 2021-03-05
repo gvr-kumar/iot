@@ -6,13 +6,15 @@ public class Department implements Cloneable {
 	private String deptName;
 	private Address deptAddress;  //Address is associated reference
 	
+	
 	@Override
 	protected Department clone() throws CloneNotSupportedException {
-		Department dept = (Department)super.clone();
+		Department dept = (Department) super.clone();
 		Address addr = deptAddress.clone();
 		dept.setDeptAddress(addr);
 		return dept;
 	}
+	 
 	
 	public Department(String deptId, String deptName) {
 		super();

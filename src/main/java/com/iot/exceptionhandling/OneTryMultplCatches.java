@@ -2,7 +2,11 @@ package com.iot.exceptionhandling;
 
 public class OneTryMultplCatches {
 	
-	
+	/**
+	 * 
+	 * Catch block should not be empty
+	 * loops should be handled 
+	 */
 	
 	public static void main(String[] args) 
 	{

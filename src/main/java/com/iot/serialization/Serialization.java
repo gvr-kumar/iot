@@ -27,12 +27,17 @@ public class Serialization {
 		
 		Employee manishP = new Employee("Emp01", "Manish Pandey", 2000.25f);
 		
+		Employee sirajM = new Employee("Emp02", "Siraj Mohammed", 3000.50f);
+		
 		try {
 			FileOutputStream fileOP = new FileOutputStream("/Users/gangineni/documents/myfiles/Employee.ser");
 			
 			ObjectOutputStream objOpStrm = new ObjectOutputStream(fileOP);
 			
 			objOpStrm.writeObject(manishP);
+			
+			objOpStrm.writeObject(sirajM);
+			
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

@@ -185,17 +185,17 @@ public class DoubleLinkedListEx {
 	 */
 	
 	 public static void displBreadCrumb(String fName) {
-		  int count = 0;
 		  boolean nameExist = false;
 		  LlHumanNode strtNode = firstNode;
-		  String name = "";	  
+		  String name = "";	 
+		  String namesString= "";
 		  try
 		  {
 			while(strtNode != null) {
 					
 				if (strtNode != null) {
 					name = strtNode.getFname();
-					count++;
+					namesString = namesString + name;
 					if(name.equalsIgnoreCase(fName))
 					{
 						nameExist = true;
@@ -204,39 +204,23 @@ public class DoubleLinkedListEx {
 					else
 					{
 						strtNode = strtNode.getFwdRef();
+						namesString = namesString + " > ";
 					}
 				}
-				name = "";
 			}
 			if(nameExist == true)
 			{
-				strtNode = firstNode;
-				for(int i=0;i < count; i++)
-				{
-					if (strtNode != null) 
-					{
-						name = strtNode.getFname();
-						System.out.print(name);
-						if (strtNode.getFwdRef() != null) 
-						{
-							if(name.equalsIgnoreCase(fName))
-							{
-								break;
-							}
-							System.out.print(" > ");
-							
-						}
-						strtNode = strtNode.getFwdRef();
-					}
-					
-				}
+				System.out.println(namesString);
 			}
 			else
 			{
 				System.out.println("Name not found");
 			}
 		  }
-		  catch (Exception e) {}
+		  catch (Exception e) {
+			  System.out.println(e);
+			  e.printStackTrace();
+		  }
 	}
 	 
 	/*

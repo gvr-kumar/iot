@@ -45,7 +45,7 @@ public static void main(String[] args) {
 	 
 	DoubleLinkedListEx.printLinkdList();
 	
-	DoubleLinkedListEx.displBreadCrumb("Chris");
+	DoubleLinkedListEx.displBreadCrumb("Shane");
 	
 	}
 }

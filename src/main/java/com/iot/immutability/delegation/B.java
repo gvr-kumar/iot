@@ -1,6 +1,6 @@
 package com.iot.immutability.delegation;
 
-public class B {
+public class B{
 	
 	private String name;
 		
@@ -13,13 +13,21 @@ public class B {
 		return name;
 	}
 
+	
 	public void setName(String name) {
 		this.name = name;
 	}
+	 
+	
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		return (B)super.clone();
+	}
 
+	
 	@Override
 	public String toString() {
 		return "I am class B, " + name;
 	}
-
+	 
 }

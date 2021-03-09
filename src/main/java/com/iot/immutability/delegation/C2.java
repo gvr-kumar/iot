@@ -1,15 +1,15 @@
 package com.iot.immutability.delegation;
 
-public class C {
+public class C2 {
 	
-	D d = new D();
+	D2 d = new D2();
 	
-	public void iAmC(B b) 
+	public void iAmC(B2 b) 
 	{
-		b.setName("Kohli");
+		d.setName("Kohli");
 		
 		System.out.println("I am class C, value of d is " +  d);
-		C c  = new C();
+		C2 c  = new C2();
 		d.iAmD(b);
 	}
 	

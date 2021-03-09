@@ -39,11 +39,12 @@ public String getAddress2() {
 		this.address2 = address2;
 	}
 
-@Override
-protected Address clone() throws CloneNotSupportedException {
 	
-	return (Address)super.clone();
-}
+	@Override
+	protected Address clone() throws CloneNotSupportedException {
+
+		return (Address) super.clone();
+	}
 
 	@Override
 	public String toString() {

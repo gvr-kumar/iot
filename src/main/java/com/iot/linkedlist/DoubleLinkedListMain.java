@@ -27,17 +27,25 @@ public static void main(String[] args) {
 	DoubleLinkedListEx.addMiddle("Karen","Alice","Darren");
 	System.out.println(DoubleLinkedListEx.printllCount());
 	
-	DoubleLinkedListEx.deleteFirst(); 
-	System.out.println(DoubleLinkedListEx.printllCount());
+	DoubleLinkedListEx.displBreadCrumb("Peter");
+	System.out.println();
 	
-	DoubleLinkedListEx.deleteLast();
-	System.out.println(DoubleLinkedListEx.printllCount());
 	
-	DoubleLinkedListEx.deleteMiddle("Karen","Alice","Darren");
-	System.out.println(DoubleLinkedListEx.printllCount());
+	  DoubleLinkedListEx.deleteFirst();
+	  System.out.println(DoubleLinkedListEx.printllCount());
+	  
+	
+		  DoubleLinkedListEx.deleteLast();
+		  System.out.println(DoubleLinkedListEx.printllCount());
+		 
+		  DoubleLinkedListEx.deleteMiddle("Karen","Alice","Darren");
+		  System.out.println(DoubleLinkedListEx.printllCount());
+		 
+	 
 	 
 	DoubleLinkedListEx.printLinkdList();
 	
+	DoubleLinkedListEx.displBreadCrumb("Shane");
 	
 	}
 }

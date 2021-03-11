@@ -1,30 +1,33 @@
 package com.iot.immutability.delegation;
 
-public class B{
+import java.util.ArrayList;
+import java.util.List;
+
+public final class B{
 	
-	private String name;
+	private final String name;
+	
+	private ArrayList<String> characteristics = new ArrayList<String>();
 		
-	public B(String name) {
+	public B(String name, ArrayList<String> characteristics) {
 		super();
 		this.name = name;
+		this.characteristics = characteristics;
 	}
-
-	public String getName() {
+	
+		public String getName() {
 		return name;
-	}
+	}	
+	
+		
+	public List<String> getCharacteristics() {
+		
+		ArrayList<String> charsClone = new ArrayList<String>();
+		charsClone = (ArrayList<String>) characteristics.clone();
+		return charsClone;
+		}
 
-	
-	public void setName(String name) {
-		this.name = name;
-	}
-	 
-	
-	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		return (B)super.clone();
-	}
-
-	
+		
 	@Override
 	public String toString() {
 		return "I am class B, " + name;

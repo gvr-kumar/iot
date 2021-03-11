@@ -6,10 +6,11 @@ public class C {
 	
 	public void iAmC(B b) 
 	{
-		b.setName("Kohli");
-		
 		System.out.println("I am class C, value of d is " +  d);
 		C c  = new C();
+		b.getCharacteristics().add("6.0");
+		b.getCharacteristics().add("fair");
+		
 		d.iAmD(b);
 	}
 	

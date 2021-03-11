@@ -113,8 +113,9 @@ Homeworks:
 
 3) immutable: origin class, rename b,c,d classes
 
-4)serialization & de: multiple objects
+4)serialization & de: multiple objects- Done
 
+5) singleton Object with real time example and multiple objects with real time example
 
 
 1)Maintain the repository of Books

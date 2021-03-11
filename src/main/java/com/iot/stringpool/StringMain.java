@@ -15,7 +15,7 @@ public class StringMain {
 	
 	String s1 = "Java";
 	
-
+	s1 = s1 + " Language";
 	
 	String s2 = "Language";
 	
@@ -24,6 +24,8 @@ public class StringMain {
 	//s3 (left side) is the reference, new String("Java") (right side) is the instance
 	
 	String s4 = "Java";
+	
+	System.out.println(s1);
 	
 	System.out.println(s1==s2);
 	

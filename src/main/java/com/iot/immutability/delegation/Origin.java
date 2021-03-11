@@ -1,20 +1,20 @@
 package com.iot.immutability.delegation;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.iot.cloning.Address;
 import com.iot.cloning.Department;
 
 public class Origin{
 	
-	private B b = new B("Darren");;
-	
-	
-
-	/*
-	 * @Override protected Origin clone() throws CloneNotSupportedException { Origin
-	 * orgn = (Origin) super.clone(); B b1 = (B) b.clone(); return orgn; }
+	/**
+	 * when nominating a class as immutable and if the class contains mutable instance variables,
+	 * we should treat them separately (then we should use clone)
+	 * 
 	 */
 	
-	public void callOrigin()
+	public void callOrigin(B b)
 	{
 		System.out.println(b.getName());
 		C c = new C();
@@ -27,8 +27,21 @@ public class Origin{
 	}
 	
 	public static void main(String[] args) {
+		ArrayList<String> chars = new ArrayList<String>();
+		
+		chars.add("5.9");
+		chars.add("dark");
+		
+		B b = new B("Darren", chars);
+		
+		System.out.println("Characteristics before callorigin: " + b.getCharacteristics());
+		
+		
 		Origin o = new Origin();
-		o.callOrigin();
+		
+		o.callOrigin(b);
+		
+		System.out.println("Characteristics after callorigin: " + b.getCharacteristics());
 	}
 
 }

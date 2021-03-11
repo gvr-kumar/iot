@@ -2,23 +2,15 @@ package com.iot.immutability.delegation;
 
 public class D2 {
 	
-	private String name;
-	
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public void iAmD(B2 b)
+	public void iAmD(B2 b21) throws CloneNotSupportedException
 	{
-		//b.setName("Rohit");
-		System.out.println("I am class D2, value of B2 is " + b);
+		b21.setName("Rohit");
+		System.out.println("I am class D, value of B is " + b21);
 	}
 
 	@Override
 	public String toString() {
-		return "I am class D2";
+		return "I am class D";
 	}
 
 }

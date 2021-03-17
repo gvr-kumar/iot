@@ -1,0 +1,42 @@
+Homeworks:
+
+1) Books repo
+
+3) immutable: origin class, rename b,c,d classes
+
+5) singleton Object with real time example and multiple objects with real time example
+
+6) Main class, immutable class, multiple mutable & immutable instance variables,  make class A immutable 
+
+7) Reflections example homework: read class name and instance varibales names , and create a table in DB using reflections
+
+
+mutable: (head office: addstore(), removestore(), noOfStores();
+
+mutable: store (store items, add remove items)
+
+store managers change every 6 months.
+
+immutable: supervisor: name, gender, qualification, address
+
+immutable: storeLocation: addr1, addr2, city)
+
+
+1)Maintain the repository of Books
+
+2) Provide an utility to validate the existing books and add them to the repository
+
+3) if the book is available, then add it always to the repository
+
+4) checkin - check out of books should be the possibility
+
+5) At any point of time, utility should give us the snapshot of the repository.
+
+
+6) abandon the entity should be a possibility
+
+
+
+7)book - name, author, price, dept, procured date, status
+
+8) status : available / Checked out / Abandoned

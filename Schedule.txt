@@ -105,39 +105,6 @@ MMisc:
 **/
 
 
-Homeworks:
-
-1) Books repo
-
-2) CHanges to breadcrumb method- Done
-
-3) immutable: origin class, rename b,c,d classes
-
-4)serialization & de: multiple objects- Done
-
-5) singleton Object with real time example and multiple objects with real time example
-
-
-1)Maintain the repository of Books
-
-2) Provide an utility to validate the existing books and add them to the repository
-
-3) if the book is available, then add it always to the repository
-
-4) checkin - check out of books should be the possibility
-
-5) At any point of time, utility should give us the snapshot of the repository.
-
-
-6) abandon the entity should be a possibility
-
-
-
-7)book - name, author, price, dept, procured date, status
-
-8) status : available / Checked out / Abandoned
-
-
 snapshot : 
 
  the total books available : 4213423423

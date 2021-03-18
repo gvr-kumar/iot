@@ -11,7 +11,8 @@ public class Origin{
 	/**
 	 * when nominating a class as immutable and if the class contains mutable instance variables,
 	 * we should treat them separately (then we should use clone)
-	 * 
+	 * Immutability is applicable only for POJOs (classes that contain instance variables, constructor)
+	 * Classes that contains methods (service layer) is always mutable.
 	 */
 	
 	public void callOrigin(B b)

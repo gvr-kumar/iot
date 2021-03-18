@@ -1,18 +1,20 @@
 package com.iot.immutability.supplychainpojos;
 
-public class Store {
+public class StorePoJo {
 
-	//SKU, items list, add item, remove item
+	//SKU, items list
 	
 	private String itemSku;
 	private String itemName;
-	private String itemPrice;
+	private float itemPrice;
+	private int itemQty;
 	
-	public Store(String itemSku, String itemName, String itemPrice) {
+	public StorePoJo(String itemSku, String itemName, float itemPrice, int itemQty) {
 		super();
 		this.itemSku = itemSku;
 		this.itemName = itemName;
 		this.itemPrice = itemPrice;
+		this.itemQty = itemQty;
 	}
 	public String getItemSku() {
 		return itemSku;
@@ -26,17 +28,21 @@ public class Store {
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
-	public String getItemPrice() {
+	public float getItemPrice() {
 		return itemPrice;
 	}
-	public void setItemPrice(String itemPrice) {
+	public void setItemPrice(float itemPrice) {
 		this.itemPrice = itemPrice;
+	}
+	public int getItemQty() {
+		return itemQty;
+	}
+	public void setItemQty(int itemQty) {
+		this.itemQty = itemQty;
 	}
 	
 	@Override
 	public String toString() {
 		return this.itemSku + " - " + this.itemName + " - " + this.itemPrice;
 	}
-	
-	
 }

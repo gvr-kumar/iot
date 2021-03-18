@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 import com.iot.immutability.supplychainpojos.StoreLocation;
 
-public class HeadOffice {
+public class HeadOfficeService {
 	
 	private int storCount;
 	

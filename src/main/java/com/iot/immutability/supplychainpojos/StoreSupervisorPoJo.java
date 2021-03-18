@@ -1,18 +1,18 @@
 package com.iot.immutability.supplychainpojos;
 
-public class StoreSupervisor {
+public final class StoreSupervisorPoJo {
 	
 	private String storSupName;
 	private String storSupGender;
 	private String storSupQual;
-	private String storSupAddrs;
+	//private String storSupAddrs;
 	
-	public StoreSupervisor(String supName, String supGender, String supQual, String supStorAddrs) {
+	public StoreSupervisorPoJo(String supName, String supGender, String supQual, String supStorAddrs) {
 		super();
 		this.storSupName = supName;
 		this.storSupGender = supGender;
 		this.storSupQual = supQual;
-		this.storSupAddrs = supStorAddrs;
+		//this.storSupAddrs = supStorAddrs;
 	}
 
 	public String getSupName() {
@@ -39,13 +39,12 @@ public class StoreSupervisor {
 		this.storSupQual = supQual;
 	}
 
-	public String getSupStorAddrs() {
-		return storSupAddrs;
-	}
-
-	public void setSupStorAddrs(String supStorAddrs) {
-		this.storSupAddrs = supStorAddrs;
-	}
+	/*
+	 * public String getSupStorAddrs() { return storSupAddrs; }
+	 * 
+	 * public void setSupStorAddrs(String supStorAddrs) { this.storSupAddrs =
+	 * supStorAddrs; }
+	 */
 	
 	
 

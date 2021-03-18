@@ -4,7 +4,6 @@ public class D {
 	
 	public void iAmD(B b)
 	{
-		//b.setName("Rohit");
 		System.out.println("I am class D, value of B is " + b);
 	}
 

@@ -1,28 +1,32 @@
 package com.iot.immutability.delegation;
 
-public final class B2{
+import com.iot.cloning.Address;
+
+public  class B2 implements Cloneable{
 	
-	
-	/*
-	 * private final D2 d2;
-	 * 
-	 * public B2(D2 d2) {
-	 * 
-	 * this.d2 = d2; }
-	 */
-	  
-	  
-	 
-	public D2 getD2() {
-		D2 d2 = new D2();
-		d2.setName(d2.getName());
-		return d2;
+	String name;
+		
+	public B2(String name) {
+		super();
+		this.name = name;
 	}
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	@Override
+	protected B2 clone() throws CloneNotSupportedException {
+
+		return (B2) super.clone();
+	}
 	
 	@Override
 	public String toString() {
-		return "I am class B, ";
+		return "I am class B2, " + name;
 	}
 	 
 }

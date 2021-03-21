@@ -38,8 +38,7 @@ public class StoreService {
 		{
 			System.out.println("Item not found : " + e);
 		}
-	}
-	
+	}	
 	/**
 	 * Display items
 	 * 
@@ -50,5 +49,4 @@ public class StoreService {
 	 * 
 	 * Iterator itr = new Iterator<StorePojo>() { }; }
 	 */
-
 }

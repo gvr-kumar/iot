@@ -11,7 +11,7 @@ public class SupplyChainMain {
 		
 		StoreService.addItem(kellogschoco);
 		StoreService.addItem(kellogspuffs);
-		
-	}
+  
+  }
 
 }

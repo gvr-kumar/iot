@@ -48,6 +48,7 @@ public class ReflectionMain {
 		}
 		
 		/*Employee kishan = new Employee("E01", "Ishan, Kishan");
+
 		
 		System.out.println(kishan.getClass());
 		
@@ -55,7 +56,6 @@ public class ReflectionMain {
 		{
 			System.out.println(f.getName());
 		}*/
-		
 		
 	}
 	

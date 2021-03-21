@@ -43,6 +43,6 @@ public class StorePoJo {
 	
 	@Override
 	public String toString() {
-		return this.itemSku + " - " + this.itemName + " - " + this.itemPrice;
+		return this.itemSku + " - " + this.itemName + " - " + this.itemPrice + " - " + this.itemQty;
 	}
 }

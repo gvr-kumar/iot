@@ -1,18 +1,19 @@
 package com.iot.immutability.supplychainservice;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 import com.iot.immutability.supplychainpojos.StorePoJo;
 
 public class StoreService {
 	
-	Map<String, StorePoJo> inventory = new HashMap<String, StorePoJo>();
+	static Map<String, StorePoJo> inventory = new HashMap<String, StorePoJo>();
 	
 	/**
 	 * add item to the inventory remove item
 	 */
 	
-	public void addItem(StorePoJo itmToAdd)
+	public static void addItem(StorePoJo itmToAdd)
 	{
 		try
 		{
@@ -27,7 +28,7 @@ public class StoreService {
 	/**
 	 * remove item from the inventory
 	*/
-	public void removeItem(String itmSku, StorePoJo itmObj)
+	public static void removeItem(String itmSku, StorePoJo itmObj)
 	{
 		try
 		{
@@ -38,5 +39,16 @@ public class StoreService {
 			System.out.println("Item not found : " + e);
 		}
 	}
+	
+	/**
+	 * Display items
+	 * 
+	 */
+	
+	/*
+	 * public void displayItms() {
+	 * 
+	 * Iterator itr = new Iterator<StorePojo>() { }; }
+	 */
 
 }

@@ -39,17 +39,16 @@ public class AllClassNamesReflectionMain {
 			
 			Reflections reflections = new Reflections("com.iot.reflection.model");
 
-			 Set<Class> allClasses = reflections.get // getSubTypesOf(Object.class);
-			 
-			 System.out.println(allClasses.size());
-			 
-			 Iterator<Class<? extends Object>> itr = allClasses.iterator();
-			 
-			 while(itr.hasNext())
-			 {
-				 Class<? extends Object> cls = itr.next();
-				 System.out.println(cls);
-			 }
+			/*
+			 * //Set<Class> allClasses = reflections.get // getSubTypesOf(Object.class);
+			 * 
+			 * //System.out.println(allClasses.size());
+			 * 
+			 * //Iterator<Class<? extends Object>> itr = allClasses.iterator();
+			 * 
+			 * while(itr.hasNext()) { Class<? extends Object> cls = itr.next();
+			 * System.out.println(cls); }
+			 */
 				 
 			
 			

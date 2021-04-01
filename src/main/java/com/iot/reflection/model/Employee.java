@@ -1,21 +1,21 @@
-package com.iot.reflection;
+package com.iot.reflection.model;
 
 public class Employee {
 
-	private String empId;
+	private int empId;
 	private String empName;
 	
 	
-	public Employee(String empId, String empName) {
+	public Employee(int empId, String empName) {
 		super();
 		this.empId = empId;
 		this.empName = empName;
 	}
 	
-	public String getEmpId() {
+	public int getEmpId() {
 		return empId;
 	}
-	public void setEmpId(String empId) {
+	public void setEmpId(int empId) {
 		this.empId = empId;
 	}
 	public String getEmpName() {
@@ -25,5 +25,10 @@ public class Employee {
 		this.empName = empName;
 	}
 	
+	
+	  @Override public String toString() {
+	  
+	  return this.empId + "-" + this.empName; }
+	 
 	
 }

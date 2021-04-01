@@ -6,8 +6,11 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.iot.dao.DbConnection;
+import com.iot.utils.PoJoToDbUtil;
 
 /**
  * metadata: data about data is called metadata
@@ -22,39 +25,56 @@ import com.iot.dao.DbConnection;
 
 public class ReflectionMain {
 	
-	public static void main(String[] args) 
+	public static void main(String[] args) throws Exception 
 	{
 		try {
 			Connection con = DbConnection.getInstance().creatDbCon();
 			Statement stmt=con.createStatement(); 
 			
-			String tblName = "tbl_" + com.iot.reflection.Employee.class.getSimpleName();
-			String colNames = "";
+			System.out.println(con);
+			String className = com.iot.reflection.model.Department.class.getSimpleName();
+			String tblName = "tbl_" + className;
+			String createTableQuery = "";
+			
+			ArrayList<Object> dataTypesList= new ArrayList<Object>();
+			ArrayList<String> colNamesList= new ArrayList<String>();
+			
+			
 			System.out.println(tblName);
 			
-			for (Field f : com.iot.reflection.Employee.class.getDeclaredFields()) {
-				colNames = colNames + f.getName()+ ";";	
+			for (Field f : com.iot.reflection.model.Department.class.getDeclaredFields()) {
+				//colNamesList.add(f.getName());	
+				
+				dataTypesList.add(f.getType().getSimpleName());
+				colNamesList.add(f.getName());
+				
+				System.out.println(f.getType().getSimpleName());
+				System.out.println(f.getName());
 			}
-			colNames = colNames.substring(0, colNames.lastIndexOf(";"));
-			System.out.println(colNames);
-			
-				/*
-				 * ResultSet rs=stmt.executeQuery("create table " + tblName + "(");
-				 */
+			System.out.println(dataTypesList);
+			System.out.println(colNamesList);
+				
+			if(dataTypesList.size() != colNamesList.size())
+			{
+				throw new Exception("Data types list is equal to columns names");
+			}
+			else 
+			{
+				
+				String queryBuilder = PoJoToDbUtil.convertToDbType(dataTypesList, colNamesList, "deptID");
+				createTableQuery = "create table if not exists " + tblName + "(" + queryBuilder + ");";
+				
+				System.out.println(createTableQuery);
+				
+				ResultSet rs=stmt.executeQuery(createTableQuery);
+				
+			}	 
 			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		/*Employee kishan = new Employee("E01", "Ishan, Kishan");
 		
-		System.out.println(kishan.getClass());
-		
-		for(Field f: kishan.getClass().getDeclaredFields())
-		{
-			System.out.println(f.getName());
-		}*/
 		
 		
 	}

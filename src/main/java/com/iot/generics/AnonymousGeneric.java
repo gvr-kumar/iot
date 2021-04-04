@@ -8,8 +8,17 @@ import java.lang.reflect.Array;
  * 
  * Method level anonymous generics
  *
- *
+ * Generics dont work with primitives
+ * 
+ * works with either wrapper classes or anything (classes, interfaces) that extends objects.
+ * 
+ * we use angular brackets to specify generics
+ * 
+ * we can use T or E or anything to specify the type definition.
+ * (which accepts any type: like Integer, String, any object in the same collection or method or a class) 
+ * 
  */
+
 public class AnonymousGeneric {
 
 	public static <E extends Object> void printArrAnonym(E[] arr)

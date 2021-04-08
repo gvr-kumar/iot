@@ -5,7 +5,7 @@ public class GenericClass<T> {
 	private T t;
 
 	public GenericClass(T t) {
-		//super(); // super refers to the parent's constructor as super is called in the constructor
+		//super(); // super refers to the parent's (if no parent then its "object") constructor as super is called in the constructor
 		this.t = t; //this always refers to the class level instance variable.
 	}
 

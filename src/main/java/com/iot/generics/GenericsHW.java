@@ -2,9 +2,14 @@ package com.iot.generics;
 
 public class GenericsHW<T> {
 	
-	private static int a=0;	
+	private static Integer a=0;	
 	
-	public GenericsHW(int a) {
+	/*1) 
+	*
+	*
+	*/
+	
+	public GenericsHW(Integer a, String string) {
 		this.a = a;
 	}
 

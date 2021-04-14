@@ -1,5 +1,12 @@
 Homeworks:
 
+Generics: take a generic class with an instance variable and a method which will take & return the same generic class type.
+
+which ever type the method takes should also return the same type.
+
+--> Annotations & reflections for the employee table : using reflections read the annotation and use them in the query 
+
+
 1) Books repo
 
 3) immutable: origin class, rename b,c,d classes
@@ -8,7 +15,7 @@ Homeworks:
 
 6) Main class, immutable class, multiple mutable & immutable instance variables,  make class A immutable 
 
-7) Reflections example homework: read class name and instance varibales names , and create a table in DB using reflections
+7) Reflections example homework: read class name and instance variables names , and create a table in DB using reflections
 
 
 mutable: (head office: addstore(), removestore(), noOfStores();

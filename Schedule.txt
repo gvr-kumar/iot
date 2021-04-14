@@ -43,7 +43,11 @@ Cloning, Serializable (Serialization), Generics, Transient
 
 17) Design patterns with examples
 
+Pending: 
 
+Multi-threaded Programming; facade; concurrent hash map; Enumerations and Annotations (Metadata); Generics and I/O; Event Handling
+
+The Concurrency Utilities; Regular Expressions; Servlets; Design patterns with examples
 
 Frameworks:
 
@@ -67,7 +71,7 @@ Frameworks:
 
 
 
-MMisc: 
+Misc: 
 
 1) Formatting and plugins
 

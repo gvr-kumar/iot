@@ -16,6 +16,7 @@ public class ArrayListModifications {
 		List<Integer> intArr2 = new ArrayList<Integer>();
 		List<Integer> intArr3 = new ArrayList<Integer>();
 		
+		
 		intArr1.add(10);
 		intArr1.add(20);
 		intArr1.add(30);

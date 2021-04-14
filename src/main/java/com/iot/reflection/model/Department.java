@@ -1,20 +1,20 @@
-package com.iot.reflection;
+package com.iot.reflection.model;
 
 public class Department {
 	
-	private String deptID;
+	private int deptID;
 	private String deptName;
 		
-	public Department(String deptID, String deptName) {
+	public Department(int deptID, String deptName) {
 		super();
 		this.deptID = deptID;
 		this.deptName = deptName;
 	}
 	
-	public String getDeptID() {
+	public int getDeptID() {
 		return deptID;
 	}
-	public void setDeptID(String deptID) {
+	public void setDeptID(int deptID) {
 		this.deptID = deptID;
 	}
 	public String getDeptName() {
@@ -23,5 +23,9 @@ public class Department {
 	public void setDeptName(String deptName) {
 		this.deptName = deptName;
 	}
-
+@Override
+public String toString() {
+	
+	return this.deptID + " - " + this.deptName;
+}
 }

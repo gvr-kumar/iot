@@ -4,7 +4,7 @@ Generics: take a generic class with an instance variable and a method which will
 
 which ever type the method takes should also return the same type.
 
---> Annotations & reflections for the employee table 
+--> Annotations & reflections for the employee table : using reflections read the annotation and use them in the query 
 
 
 1) Books repo

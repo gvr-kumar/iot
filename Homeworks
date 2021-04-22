@@ -6,6 +6,10 @@ which ever type the method takes should also return the same type.
 
 --> Annotations & reflections for the employee table : using reflections read the annotation and use them in the query 
 
+--> Enums: work flow status: New --> In progress --> Hold/ Resolved --> Closed , Issue name description, creation date, assignee, 
+
+methods : create, in-progress, hold, resume, close
+
 
 1) Books repo
 

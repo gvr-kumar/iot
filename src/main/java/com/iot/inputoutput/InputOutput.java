@@ -32,8 +32,30 @@ package com.iot.inputoutput;
  *	Blocking IO streams: byte array input stream, file input stream, object input stream, 
  *
  *	NIO streams (Non-blocking IO):
+ *
+ *	Basic input stream: system.in which is used to read data into the program
+ *
+ *	Basic output stream: system.out which is used to write data to the console
+ *
+ *	Basic error stream: system.err which is used to print errors in the console
  */
 
 public class InputOutput {
+	
+	public static void main(String[] args) {
+		int a,b, c;
+		a = Integer.parseInt(args[0]);
+		b = Integer.parseInt(args[1]);
+		
+		if(b == 0)
+		{
+			System.err.println("b cannot be zero");
+			System.out.println("b cannot be zero");
+		}
+		else
+		{
+			c = a/b;
+		}
+	}
 
 }

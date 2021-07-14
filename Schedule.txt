@@ -1,8 +1,9 @@
-1)OOPS concepts (Encapsulation, Polymorphism, Inheritance, Abstraction)
+1)OOPS concepts (Encapsulation, Polymorphism, Inheritance, Data Abstraction: achieved using access specifiers)
 
-2)Static, Access specifiers, getters & setters
+2)Static, Access specifiers (public, private, protected; by default protected if we dont specify anything), getters & setters
 
-3)Packages & Interfaces , Dynamic resolution
+3)Packages & Interfaces , Dynamic resolution (base class reference can be assigned to child class object; ex: List l = new ArrayList(), 
+here List is interface and ArrayList is the child concrete class)
 
 4)Exception Handling (when to use which exception), Wrapper class, POJO (Plain Old Java Object: A class which has only variables, constructors and getters & setters but no major business logic)
 
@@ -48,6 +49,8 @@ Pending:
 Multi-threaded Programming; facade; concurrent hash map; Enumerations and Annotations (Metadata); Generics and I/O; Event Handling
 
 The Concurrency Utilities; Regular Expressions; Servlets; Design patterns with examples
+
+date utilities
 
 Frameworks:
 
@@ -109,12 +112,3 @@ Misc:
 **/
 
 
-snapshot : 
-
- the total books available : 4213423423
-
- The # of books checked out : 234234
-
- the number of books at DEPT1 : 234234 (Optional)
-
-  the number of books at DEP2 : 234234 (Optional)

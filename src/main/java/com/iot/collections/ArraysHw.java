@@ -82,6 +82,62 @@ public class ArraysHw {
 		
 	}
 	
+	public int nthMax(int index, int[] intArr)
+	{
+		int nthMax = 0;
+		try
+		{
+			if(index >= intArr.length)
+			{
+				System.out.println("Index is out of bounds.");
+				
+			}else if (index <= 0)
+			{
+				System.out.println("Index is not valid.");
+			}
+			else
+			{
+				for(int i = 0; i< intArr.length; i++)
+				{
+					if(index-1 == i)
+					{
+						nthMax = intArr[i];
+					}
+				}
+			}
+		}
+		catch(Exception e) {}
+		return nthMax;
+	}
 	
+	public int[] sortArray(String sortOrder, int[] intArr)
+	{
+		try
+		{
+			for (int i = 0; i < intArr.length; i++) {
+				for (int j = 0; j < intArr.length; j++) {
+					int maxVal = 0;
+					if(sortOrder.equalsIgnoreCase("ASCENDING"))
+					{
+						if (intArr[i] < intArr[j]) {
+							maxVal = intArr[j];					
+							intArr[j] = intArr[i];
+							intArr[i] = maxVal;
+						}
+					}
+					else if(sortOrder.equalsIgnoreCase("DESCENDING"))
+					{
+						if (intArr[i] > intArr[j]) {
+							maxVal = intArr[j];					
+							intArr[j] = intArr[i];
+							intArr[i] = maxVal;
+						}
+					}
+				}
+			}
+		}
+		catch(Exception e) {}
+		return intArr;
+	}
 
 }

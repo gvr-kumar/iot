@@ -1,25 +1,21 @@
 package com.iot.generics;
 
 public class GenericsHW<T> {
+
+	private int c;
 	
-	private static Integer a=0;	
-	
-	/*1) 
-	*
-	*
-	*/
-	
-	public GenericsHW(Integer a, String string) {
+	private T a;
+	private T b;
+
+	public GenericsHW(T a, T b, int c) {
+		super();
 		this.a = a;
+		this.b = b;
+		this.c = c; 
 	}
 
-	public static int getA() {
-		return a;
+	public T print() {
+		return (T) (a + " " + b + c);
 	}
 
-	public GenericsHW<T> getSqr(GenericsHW<T> b)
-	{
-		return b;
-	}
-	
 }

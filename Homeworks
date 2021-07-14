@@ -11,6 +11,8 @@ which ever type the method takes should also return the same type.
 methods : create, in-progress, hold, resume, close
 
 
+read and write example using byte stream
+
 1) Books repo
 
 3) immutable: origin class, rename b,c,d classes
@@ -51,3 +53,19 @@ immutable: storeLocation: addr1, addr2, city)
 7)book - name, author, price, dept, procured date, status
 
 8) status : available / Checked out / Abandoned
+
+snapshot : 
+
+ the total books available : 4213423423
+
+ The # of books checked out : 234234
+
+ the number of books at DEPT1 : 234234 (Optional)
+
+  the number of books at DEP2 : 234234 (Optional)
+  
+  [10,3,5,6,72,2,99,101,1]
+3rd max
+n= 1 101
+n=2 99
+n=3 72
